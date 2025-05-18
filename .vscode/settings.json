@@ -1,0 +1,43 @@
+{
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
+    "editor.wordWrap": "bounded"
+  },
+  "editor.foldingImportsByDefault": true,
+  "window.zoomLevel": 1.2,
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.tabSize": 2,
+  "editor.wrappingIndent": "indent",
+  "files.defaultLanguage": "markdown",
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "git.enableCommitSigning": true,
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "markdown.preview.breaks": true,
+  "pasteImage.path": "${projectRoot}/image",
+  "pasteImage.showFilePathConfirmInputBox": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "scm.showActionButton": false,
+  "git.showActionButton": {
+    "commit": false,
+    "publish": false,
+    "sync": false
+  },
+  "git.followTagsWhenSync": true,
+  "git.rebaseWhenSync": true,
+  "editor.wordWrap": "bounded",
+  "chat.mcp.discovery.enabled": true
+}
