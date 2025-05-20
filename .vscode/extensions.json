@@ -9,12 +9,7 @@
         "bierner.markdown-preview-github-styles",
         "bierner.markdown-yaml-preamble",
         "DavidAnson.vscode-markdownlint",
-        "foam.foam-vscode",
         "GitHub.remotehub",
-        "marp-team.marp-vscode",
-        "mushan.vscode-paste-image",
-        "streetsidesoftware.code-spell-checker",
-        "yzhang.markdown-all-in-one"
     ],
   "unwantedRecommendations": []
 }
