@@ -1,0 +1,20 @@
+services:
+
+  schemacrawler-mcpserver:
+    image: schemacrawler/schemacrawler:extra-latest
+    container_name: schemacrawler-mcpserver
+    stdin_open: true
+    tty: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - type: bind
+        source: ./
+        target: /home/schcrwlr/share
+    entrypoint: ['/opt/schemacrawler/bin/schemacrawler.sh']
+    command: >
+      --server sqlite
+      --database sc.db
+      --command mcpserver
+      --info-level maximum
+      --log-level INFO
