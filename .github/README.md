@@ -37,9 +37,9 @@ docker-compose -f schemacrawler-mcpserver.yaml up -d
 
 ## Use Visual Studio Code MCP Client
 
-- Read [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)
-- Connect to the MCP Server in Visual Studio Code (the server is configured in the ".vscode/mcp.json" file)
-- Ask questions about your database in "Agent" mode
+1. Read [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)
+2. Connect to the MCP Server in Visual Studio Code (the server is configured in the ".vscode/mcp.json" file)
+3. Ask questions about your database in "Agent" mode
 
 
 ## Connect to Your Database
