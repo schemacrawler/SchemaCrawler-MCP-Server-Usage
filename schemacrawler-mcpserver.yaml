@@ -6,15 +6,16 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - "8080:8080"
+    - "8080:8080"
     volumes:
-      - type: bind
-        source: ./
-        target: /home/schcrwlr/share
-    entrypoint: ['/opt/schemacrawler/bin/schemacrawler.sh']
+    - type: bind
+      source: ./
+      target: /home/schcrwlr/share
+    entrypoint: [ '/opt/schemacrawler/bin/schemacrawler.sh' ]
     command: >
       --server sqlite
       --database sc.db
       --command mcpserver
       --info-level maximum
       --log-level INFO
+    # See https://www.schemacrawler.com/database-support.html for connecting to other databases
