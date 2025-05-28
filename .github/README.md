@@ -55,6 +55,6 @@ docker-compose -f schemacrawler-mcpserver.yaml up -d
 docker-compose -f schemacrawler-mcpserver.yaml down -t0
 ```
 
-2. Edit the `schemacrawler-mcpserver.yaml` file to add your database connection details
+2. Edit the `schemacrawler-mcpserver.yaml` file to add [your database connection details](https://www.schemacrawler.com/database-support.html)
 
 3. Restart the SchemaCrawler MCP Server
