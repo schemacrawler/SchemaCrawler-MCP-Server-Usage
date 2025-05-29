@@ -26,13 +26,15 @@ This is a bare project that acts as an MCP client for the [SchemaCrawler MCP Ser
 
 ## Start the SchemaCrawler MCP Server
 
-1. Run the SchemaCrawler MCP Server
-
-```sh
-docker-compose -f schemacrawler-mcpserver.yaml up -d
-```
-
-2. Check server health in a browser [http://localhost:8080/health](http://localhost:8080/health)
+1. Pull the latest image for SchemaCrawler MCP Server
+   ```sh
+   docker pull schemacrawler/schemacrawler:extra-latest
+   ```
+2. Run the SchemaCrawler MCP Server
+   ```sh
+   docker-compose -f schemacrawler-mcpserver.yaml up -d
+   ```
+3. Check server health in a browser [http://localhost:8080/health](http://localhost:8080/health)
 
 
 ## Use Visual Studio Code MCP Client
@@ -50,11 +52,8 @@ docker-compose -f schemacrawler-mcpserver.yaml up -d
 ## Connect to Your Database
 
 1. Stop the SchemaCrawler MCP Server
-
-```sh
-docker-compose -f schemacrawler-mcpserver.yaml down -t0
-```
-
-2. Edit the `schemacrawler-mcpserver.yaml` file to add [your database connection details](https://www.schemacrawler.com/database-support.html)
-
+   ```sh
+   docker-compose -f schemacrawler-mcpserver.yaml down -t0
+   ```
+2. Edit the "schemacrawler-mcpserver.yaml" file to add [your database connection details](https://www.schemacrawler.com/database-support.html)
 3. Restart the SchemaCrawler MCP Server
