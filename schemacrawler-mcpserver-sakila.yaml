@@ -29,6 +29,7 @@ services:
       --database sakila
       --user sakila
       --password p_ssW0rd
+      --routines .*
       --command mcpserver
       --info-level maximum
       --log-level INFO
