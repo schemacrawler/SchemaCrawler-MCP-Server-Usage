@@ -1,0 +1,35 @@
+services:
+
+  sakila:
+    image: sakiladb/mysql
+    container_name: sakila
+    ports:
+      - target: 3306
+        published: 3306
+        protocol: tcp
+        mode: host
+
+  schemacrawler-mcpserver:
+    image: schemacrawler/schemacrawler:extra-early-access-release
+    container_name: schemacrawler-mcpserver
+    stdin_open: true
+    tty: true
+    depends_on:
+      - sakila
+    ports:
+    - "8080:8080"
+    volumes:
+    - type: bind
+      source: ./
+      target: /home/schcrwlr/share
+    entrypoint: [ '/opt/schemacrawler/bin/schemacrawler.sh' ]
+    command: >
+      --server mysql
+      --host sakila
+      --database sakila
+      --user sakila
+      --password p_ssW0rd
+      --command mcpserver
+      --info-level maximum
+      --log-level INFO
+    # See https://www.schemacrawler.com/database-support.html for connecting to other databases
