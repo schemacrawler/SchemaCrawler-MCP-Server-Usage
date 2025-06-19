@@ -1,7 +1,7 @@
 services:
 
   schemacrawler-mcpserver:
-    image: schemacrawler/schemacrawler:extra-latest-early-access-release
+    image: schemacrawler/schemacrawler:extra-early-access-release
     container_name: schemacrawler-mcpserver
     stdin_open: true
     tty: true

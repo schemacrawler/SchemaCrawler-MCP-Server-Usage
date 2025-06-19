@@ -28,7 +28,7 @@ This is a bare project that acts as an MCP client for the [SchemaCrawler MCP Ser
 
 1. Pull the latest image for SchemaCrawler MCP Server
    ```sh
-   docker pull schemacrawler/schemacrawler:extra-latest-early-access-release
+   docker pull schemacrawler/schemacrawler:extra-early-access-release
    ```
 2. Run the SchemaCrawler MCP Server
    ```sh
