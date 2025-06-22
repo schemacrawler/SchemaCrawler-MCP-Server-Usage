@@ -3,7 +3,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/schemacrawler/schemacrawler?style=social)
 
 
-# <img src="https://raw.githubusercontent.com/schemacrawler/SchemaCrawler/main/schemacrawler-website/src/site/resources/images/schemacrawler_logo.png" height="100px" width="100px" valign="middle"/> SchemaCrawler - MCP Client Usage
+# <img src="https://raw.githubusercontent.com/schemacrawler/SchemaCrawler/main/schemacrawler-website/src/site/resources/images/schemacrawler_logo.png" height="100px" width="100px" valign="middle"/> SchemaCrawler - MCP Server Usage
 
 > [!NOTE]  
 > * Please see the [SchemaCrawler website](https://www.schemacrawler.com/) for more details.
