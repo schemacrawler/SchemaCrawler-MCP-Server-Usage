@@ -1,0 +1,39 @@
+services:
+
+  adventureworks:
+    image: chriseaton/adventureworks:postgres
+    container_name: adventureworks
+    ports:
+      - target: 5432
+        published: 5432
+        protocol: tcp
+        mode: host
+    environment:
+      POSTGRES_USER: schemacrawler
+      POSTGRES_PASSWORD: schemacrawler
+
+  schemacrawler-mcpserver:
+    image: schemacrawler/schemacrawler:extra-early-access-release
+    container_name: schemacrawler-mcpserver
+    stdin_open: true
+    tty: true
+    depends_on:
+      - adventureworks
+    ports:
+    - "8080:8080"
+    volumes:
+    - type: bind
+      source: ./
+      target: /home/schcrwlr/share
+    entrypoint: [ '/opt/schemacrawler/bin/schemacrawler.sh' ]
+    command: >
+      --server postgresql
+      --host adventureworks
+      --database postgres
+      --user schemacrawler
+      --password schemacrawler
+      --routines .*
+      --command mcpserver
+      --info-level maximum
+      --log-level INFO
+    # See https://www.schemacrawler.com/database-support.html for connecting to other databases
