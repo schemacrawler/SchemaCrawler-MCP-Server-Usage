@@ -39,5 +39,8 @@
   "git.followTagsWhenSync": true,
   "git.rebaseWhenSync": true,
   "editor.wordWrap": "bounded",
-  "chat.mcp.discovery.enabled": true
+  "chat.mcp.discovery.enabled": true,
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.iconTheme": "material-icon-theme",
+  "git.autoStash": true
 }
