@@ -1,6 +1,6 @@
 {
   "servers": {
-    "schemacrawler-mcpserver": {
+    "schemacrawler": {
       "type": "sse",
       "url": "http://localhost:8080/sse"
     },
