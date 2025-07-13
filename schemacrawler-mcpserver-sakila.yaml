@@ -31,6 +31,7 @@ services:
       --password p_ssW0rd
       --routines .*
       --command mcpserver
+      --transport sse
       --info-level maximum
       --log-level INFO
     # See https://www.schemacrawler.com/database-support.html for connecting to other databases

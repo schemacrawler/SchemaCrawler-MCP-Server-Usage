@@ -34,6 +34,7 @@ services:
       --password schemacrawler
       --routines .*
       --command mcpserver
+      --transport sse
       --info-level maximum
       --log-level INFO
     # See https://www.schemacrawler.com/database-support.html for connecting to other databases

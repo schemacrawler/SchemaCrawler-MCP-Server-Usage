@@ -9,7 +9,8 @@
       "args": [
         "mcp",
         "gateway",
-        "run"
+        "run",
+        "--long-lived"
       ],
       "type": "stdio"
     }
