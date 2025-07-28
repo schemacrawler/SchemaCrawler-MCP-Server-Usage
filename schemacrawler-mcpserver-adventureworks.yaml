@@ -19,8 +19,11 @@ services:
     tty: true
     depends_on:
       - adventureworks
+    environment:
+      SERVER_PORT: 9191
     ports:
-    - "8080:8080"
+      - target: 9191      # The container port
+        published: 9292   # The host port
     volumes:
     - type: bind
       source: ./

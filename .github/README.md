@@ -34,7 +34,7 @@ This is a bare project that acts as an MCP client for the [SchemaCrawler MCP Ser
    ```sh
    docker compose -f schemacrawler-mcpserver.yaml up -d
    ```
-3. Check server health in a browser [http://localhost:8080/health](http://localhost:8080/health)
+3. Check server health in a browser [http://localhost:9292/health](http://localhost:9292/health)
 
 
 ## Use Visual Studio Code MCP Client

@@ -2,7 +2,7 @@
   "servers": {
     "schemacrawler": {
       "type": "sse",
-      "url": "http://localhost:8080/sse"
+      "url": "http://localhost:9292/sse"
     },
     "MCP_DOCKER": {
       "command": "docker",
