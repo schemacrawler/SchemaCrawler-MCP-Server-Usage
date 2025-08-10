@@ -47,6 +47,7 @@ This is a bare project that acts as an MCP client for the [SchemaCrawler MCP Ser
    - "What foreign keys reference the Authors table?"
    - "Are there any design issues with my database schema?"
    - "Write SQL to find books and their authors"
+4. Additional "Agent" modes are provided in this project too. Use the "database-expert" or "sql-query-assistant" modes for fine-tuned help for specific tasks.
 
 
 ## Connect to Your Database
