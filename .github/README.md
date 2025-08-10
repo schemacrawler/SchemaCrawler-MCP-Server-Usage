@@ -49,6 +49,12 @@ This is a bare project that acts as an MCP client for the [SchemaCrawler MCP Ser
    - "Write SQL to find books and their authors"
 4. Additional "Agent" modes are provided in this project too. Use the "database-expert" or "sql-query-assistant" modes for fine-tuned help for specific tasks.
 
+## Use Other MCP Clients
+
+Try other MCP Clients too.
+- [Microsoft AI Shell](https://learn.microsoft.com/en-us/powershell/utility-modules/aishell/overview?view=ps-modules) for a shell
+- ... and more at [Awesome MCP Clients](https://github.com/punkpeye/awesome-mcp-clients)
+
 
 ## Connect to Your Database
 
