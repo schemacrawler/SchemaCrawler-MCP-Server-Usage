@@ -18,6 +18,9 @@ services:
       - sakila
     environment:
       SERVER_PORT: 9191
+      # (put these in your .env file)
+      SCHCRWLR_DATABASE_USER: ${SCHCRWLR_DATABASE_USER}
+      SCHCRWLR_DATABASE_PASSWORD: ${SCHCRWLR_DATABASE_PASSWORD}
     ports:
       - target: 9191      # The container port
         published: 9292   # The host port
@@ -30,10 +33,10 @@ services:
       --server mysql
       --host sakila
       --database sakila
-      --user sakila
-      --password p_ssW0rd
+      --user:env SCHCRWLR_DATABASE_USER
+      --password:env SCHCRWLR_DATABASE_PASSWORD
       --routines .*
-      --command mcpserver
+      --command list
       --transport sse
       --info-level maximum
       --log-level INFO
