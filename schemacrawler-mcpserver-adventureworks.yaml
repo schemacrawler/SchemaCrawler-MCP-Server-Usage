@@ -9,8 +9,9 @@ services:
         protocol: tcp
         mode: host
     environment:
-      POSTGRES_USER: schemacrawler
-      POSTGRES_PASSWORD: schemacrawler
+      # (put these in your .env file)
+      POSTGRES_USER: ${SCHCRWLR_DATABASE_USER}
+      POSTGRES_PASSWORD: ${SCHCRWLR_DATABASE_PASSWORD}
 
   schemacrawler-mcpserver:
     image: schemacrawler/schemacrawler-ai:latest
@@ -21,6 +22,9 @@ services:
       - adventureworks
     environment:
       SERVER_PORT: 9191
+      # (put these in your .env file)
+      SCHCRWLR_DATABASE_USER: ${SCHCRWLR_DATABASE_USER}
+      SCHCRWLR_DATABASE_PASSWORD: ${SCHCRWLR_DATABASE_PASSWORD}
     ports:
       - target: 9191      # The container port
         published: 9292   # The host port
@@ -33,8 +37,8 @@ services:
       --server postgresql
       --host adventureworks
       --database postgres
-      --user schemacrawler
-      --password schemacrawler
+      --user:env SCHCRWLR_DATABASE_USER
+      --password:env SCHCRWLR_DATABASE_PASSWORD
       --routines .*
       --command mcpserver
       --transport sse
