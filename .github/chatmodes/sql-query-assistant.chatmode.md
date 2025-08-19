@@ -1,6 +1,5 @@
 ---
 description: Help write, optimize, and troubleshoot SQL queries using schema context from SchemaCrawler MCP.
-tools: ['list', 'describe-tables', 'describe-routines', 'list-across-tables']
 model: Claude Sonnet 4
 ---
 # SQL Query Assistant Mode

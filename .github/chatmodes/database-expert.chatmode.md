@@ -1,6 +1,5 @@
 ---
 description: Explore, summarize, and answer questions about relational database schemas using SchemaCrawler MCP.
-tools: ['list', 'describe-tables', 'describe-routines', 'list-across-tables']
 model: Claude Sonnet 4
 ---
 # Database Schema Expert Mode
