@@ -6,7 +6,16 @@ services:
     stdin_open: true
     tty: true
     environment:
-      SERVER_PORT: 9191
+    # See https://www.schemacrawler.com/database-support.html
+    # for connecting to other databases
+      # (put these in your .env file)
+      SCHCRWLR_SERVER: sqlite
+      SCHCRWLR_DATABASE: sc.db
+      SCHCRWLR_INFO_LEVEL: maximum
+      SCHCRWLR_LOG_LEVEL: INFO
+      SCHCRWLR_MCP_SERVER_TRANSPORT: sse
+      # Set the server port
+      SERVER_PORT: 9191   # Set the container port
     ports:
       - target: 9191      # The container port
         published: 9292   # The host port
@@ -14,12 +23,3 @@ services:
     - type: bind
       source: ./
       target: /home/schcrwlr/share
-    entrypoint: [ '/opt/schemacrawler/bin/schemacrawler.sh' ]
-    command: >
-      --server sqlite
-      --database sc.db
-      --command mcpserver
-      --transport sse
-      --info-level maximum
-      --log-level INFO
-    # See https://www.schemacrawler.com/database-support.html for connecting to other databases
