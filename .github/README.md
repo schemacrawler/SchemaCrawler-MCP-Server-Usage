@@ -13,15 +13,16 @@
 
 SchemaCrawler is a free database schema discovery and comprehension tool. SchemaCrawler has a good mix of useful features for data governance. You can [search for database schema objects](https://www.schemacrawler.com/schemacrawler-grep.html) using regular expressions, and output the schema and data in a readable text format.
 
-This is a bare project that acts as an MCP client for the [SchemaCrawler MCP Server](https://github.com/schemacrawler/SchemaCrawler-AI) for use in "Agent" mode.
+This is a bare project that acts as an MCP client for the [SchemaCrawler AI MCP Server](https://github.com/schemacrawler/SchemaCrawler-AI) for use in "Agent" mode.
 
 ## Prerequisites
 
-1. Supporting software
+1. Install supporting software
    - Docker
    - Docker Compose
    - Visual Studio Code
-2. Clone this project, and open it in Visual Studio Code
+2. Read [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)
+3. Clone this project, and open it in Visual Studio Code
 
 
 ## Getting Started

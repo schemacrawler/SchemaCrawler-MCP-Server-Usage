@@ -2,13 +2,16 @@
 
 The SchemaCrawler AI MCP Server runs with either the "stdio" or "sse" transports. The server is available as a Docker-verified image from [the Docker MCP Catalog](https://hub.docker.com/mcp/server/schemacrawler-ai/overview), or more recent images from [DockerHub](https://hub.docker.com/repository/docker/schemacrawler/schemacrawler-ai/general).
 
+
 ## Prerequisites
 
 1. Install supporting software
    - Docker
    - Docker Compose
    - Visual Studio Code
-2. Clone this project, and open it in Visual Studio Code
+2. Read [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)
+3. Clone this project, and open it in Visual Studio Code
+
 
 ## Start from the Docker MCP Catalog
 
@@ -38,7 +41,18 @@ These instructions are for using Visual Studio Code as a client, but with small 
       }
     }
     ```
-4. Use Visual Studio Code Agent mode to ask questions about your database. The server should start up automatically. Predefined Visual Studio Code chat modes is available in this projet, and it is better to use those chat modes than plain Agent mode.
+4. Use Visual Studio Code Agent mode to ask questions about your database. The server should start up automatically.
+  Additional "Agent" chat modes are provided in this project too. Use the "database-expert" or "sql-query-assistant" modes for fine-tuned help for specific tasks.
+  A good question to start with is "What tables are available in my database?".
 
+
+## Configure Your Database
+
+1. Configure a connection to your database in Docker Desktop, and follow the steps above again.
 
 > See [additional configuration parameters](./configuration-parameters.md)
+
+
+## Next Steps
+
+Start the SchemaCawler AI MCP Server with the [HTTP transport](./server-http-transport.md).
