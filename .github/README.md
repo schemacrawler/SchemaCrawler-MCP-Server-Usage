@@ -3,7 +3,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/schemacrawler/schemacrawler?style=social)
 
 
-# <img src="https://raw.githubusercontent.com/schemacrawler/SchemaCrawler/main/schemacrawler-website/src/site/resources/images/schemacrawler_logo.png" height="100px" width="100px" valign="middle"/> SchemaCrawler - MCP Server Usage
+# <img src="https://raw.githubusercontent.com/schemacrawler/SchemaCrawler/main/schemacrawler-website/src/site/resources/images/schemacrawler_logo.png" height="100px" width="100px" valign="middle"/> SchemaCrawler AI MCP Server: Usage
 
 > [!NOTE]  
 > * Please see the [SchemaCrawler website](https://www.schemacrawler.com/) for more details.
@@ -13,7 +13,10 @@
 
 SchemaCrawler is a free database schema discovery and comprehension tool. SchemaCrawler has a good mix of useful features for data governance. You can [search for database schema objects](https://www.schemacrawler.com/schemacrawler-grep.html) using regular expressions, and output the schema and data in a readable text format.
 
-This is a bare project that acts as an MCP client for the [SchemaCrawler AI MCP Server](https://github.com/schemacrawler/SchemaCrawler-AI) for use in "Agent" mode.
+This is a bare project that acts as an MCP client for the [SchemaCrawler AI MCP Server](https://github.com/schemacrawler/SchemaCrawler-AI) for use in "Agent" mode. You can find documentation on how to use the server here.
+
+The SchemaCrawler AI MCP Server is available on [the Docker MCP Catalog](https://hub.docker.com/mcp/server/schemacrawler-ai/overview) as a Docker-verified image.
+
 
 ## Prerequisites
 
