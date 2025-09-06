@@ -1,18 +1,21 @@
 {
   "servers": {
-    "schemacrawler": {
-      "type": "sse",
-      "url": "http://localhost:9292/sse"
-    },
-    "MCP_DOCKER": {
+    "schemacrawler-sqlite": {
       "command": "docker",
       "args": [
+        "--log-level",
+        "debug",
         "mcp",
         "gateway",
         "run",
-        "--long-lived"
+        "--long-lived",
+        "--verbose"
       ],
       "type": "stdio"
+    },
+    "schemacrawler": {
+      "type": "sse",
+      "url": "http://localhost:9292/sse"
     }
   }
 }
