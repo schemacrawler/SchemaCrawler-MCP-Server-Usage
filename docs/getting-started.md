@@ -1,14 +1,14 @@
 # Getting Started With the SchemaCrawler AI MCP Server
 
-The SchemaCrawler AI MCP Server runs with either the "stdio" or "sse" transports. The server is available as a Docker-verified image from [the Docker MCP Catalog](https://hub.docker.com/mcp/server/schemacrawler-ai/overview), or more recent images from [DockerHub](https://hub.docker.com/repository/docker/schemacrawler/schemacrawler-ai/general).
+The SchemaCrawler AI MCP Server runs with either the "stdio" or "http" (streamable HTTP) transports. The server is available as a Docker-verified image from [the Docker MCP Catalog](https://hub.docker.com/mcp/server/schemacrawler-ai/overview), or more recent images from [DockerHub](https://hub.docker.com/repository/docker/schemacrawler/schemacrawler-ai).
 
 
 ## Prerequisites
 
 1. Install supporting software
-   - Docker
+   - [Docker](https://docs.docker.com/engine/install/)
    - Docker Compose
-   - Visual Studio Code
+   - [Visual Studio Code](https://code.visualstudio.com/download)
 2. Read [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)
 3. Clone this project, and open it in Visual Studio Code
 
@@ -25,7 +25,7 @@ These instructions are for using Visual Studio Code as a client, but with small 
     ```json
     {
       "servers": {
-        "schemacrawler-sqlite": {
+        "schemacrawler_sqlite": {
           "command": "docker",
           "args": [
             "--log-level",

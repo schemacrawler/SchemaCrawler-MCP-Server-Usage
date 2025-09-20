@@ -1,6 +1,6 @@
 {
   "servers": {
-    "schemacrawler-sqlite": {
+    "schemacrawler_stdio": {
       "command": "docker",
       "args": [
         "--log-level",
@@ -14,8 +14,8 @@
       "type": "stdio"
     },
     "schemacrawler": {
-      "type": "sse",
-      "url": "http://localhost:9292/sse"
+      "type": "http",
+      "url": "http://localhost:9292/mcp"
     }
   }
 }

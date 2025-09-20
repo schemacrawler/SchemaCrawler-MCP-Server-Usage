@@ -13,7 +13,7 @@ services:
       SCHCRWLR_DATABASE: sc.db
       SCHCRWLR_INFO_LEVEL: maximum
       SCHCRWLR_LOG_LEVEL: INFO
-      SCHCRWLR_MCP_SERVER_TRANSPORT: sse
+      SCHCRWLR_MCP_SERVER_TRANSPORT: http
       # Set the server port
       SERVER_PORT: 9191   # Set the container port
     ports:

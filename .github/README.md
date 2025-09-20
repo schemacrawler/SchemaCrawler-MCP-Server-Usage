@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-[![Docker Pulls](https://img.shields.io/docker/pulls/schemacrawler/schemacrawler?color=FFDAB9)](https://hub.docker.com/r/schemacrawler/schemacrawler/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/schemacrawler/schemacrawler-ai?color=FFDAB9)](https://hub.docker.com/r/schemacrawler/schemacrawler-ai/)
 ![GitHub Repo stars](https://img.shields.io/github/stars/schemacrawler/schemacrawler?style=social)
 
 
@@ -15,7 +15,7 @@ SchemaCrawler is a free database schema discovery and comprehension tool. Schema
 
 This is a bare project that acts as an MCP client for the [SchemaCrawler AI MCP Server](https://github.com/schemacrawler/SchemaCrawler-AI) for use in "Agent" mode. You can find documentation on how to use the server here.
 
-The SchemaCrawler AI MCP Server is available on [the Docker MCP Catalog](https://hub.docker.com/mcp/server/schemacrawler-ai/overview) as a Docker-verified image.
+The SchemaCrawler AI MCP Server is available as a Docker image [schemacrawler/schemacrawler-ai](https://hub.docker.com/repository/docker/schemacrawler/schemacrawler-ai). It is also available from the [the Docker MCP Catalog](https://hub.docker.com/mcp/server/schemacrawler-ai/overview) as a Docker-verified image.
 
 
 ## Prerequisites
