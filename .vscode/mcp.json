@@ -1,18 +1,5 @@
 {
   "servers": {
-    "schemacrawler_stdio": {
-      "command": "docker",
-      "args": [
-        "--log-level",
-        "debug",
-        "mcp",
-        "gateway",
-        "run",
-        "--long-lived",
-        "--verbose"
-      ],
-      "type": "stdio"
-    },
     "schemacrawler": {
       "type": "http",
       "url": "http://localhost:9292/mcp"
