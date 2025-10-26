@@ -1,4 +1,6 @@
 <!-- markdownlint-disable MD041 -->
+**:star: Star it :arrow_heading_up: if you love it!**
+
 [![Docker Pulls](https://img.shields.io/docker/pulls/schemacrawler/schemacrawler-ai?color=FFDAB9)](https://hub.docker.com/r/schemacrawler/schemacrawler-ai/)
 ![GitHub Repo stars](https://img.shields.io/github/stars/schemacrawler/schemacrawler?style=social)
 
