@@ -48,9 +48,7 @@ These instructions are for using Visual Studio Code as a client, but with small 
 
 ## Configure Your Database
 
-1. Configure a connection to your database in Docker Desktop, and follow the steps above again.
-
-> See [additional configuration parameters](./configuration-parameters.md)
+1. Configure a connection to your database in Docker Desktop, and follow the steps above again. See [additional configuration parameters which can be set as environmental variables](https://github.com/schemacrawler/SchemaCrawler-AI/blob/main/schemacrawler-ai-mcpserver/mcp-server-registration.json).
 
 
 ## Next Steps
