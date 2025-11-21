@@ -1,7 +1,6 @@
 # Getting Started With the SchemaCrawler AI MCP Server
 
-The SchemaCrawler AI MCP Server runs with either the "stdio" or "http" (streamable HTTP) transports. The server is available as a Docker-verified image from [the Docker MCP Catalog](https://hub.docker.com/mcp/server/schemacrawler-ai/overview), or more recent images from [DockerHub](https://hub.docker.com/repository/docker/schemacrawler/schemacrawler-ai).
-
+The SchemaCawler AI MCP Server is available as a Docker image from [Docker Hub](https://hub.docker.com/mcp/server/schemacrawler-ai/overview).
 
 ## Prerequisites
 
@@ -13,44 +12,43 @@ The SchemaCrawler AI MCP Server runs with either the "stdio" or "http" (streamab
 3. Clone this project, and open it in Visual Studio Code
 
 
-## Start from the Docker MCP Catalog
+## Start the SchemaCrawler AI MCP Server
 
-These instructions are for using Visual Studio Code as a client, but with small modifications can work for other clients as well.
+1. Pull the latest image for SchemaCrawler AI MCP Server
+   ```sh
+   docker pull schemacrawler/schemacrawler-ai:latest
+   ```
+2. Run the SchemaCrawler AI MCP Server
+   ```sh
+   docker compose -f schemacrawler-mcpserver.yaml up -d
+   ```
+3. Check server health in a browser [http://localhost:9292/health](http://localhost:9292/health)
 
-1. Ensure that you have Docker installed. If you have Docker Desktop, it will be easier to configure the MCP server. You can download the Docker image aheads of time to make startup quicker. Run `docker pull mcp/schemacrawler-ai`.
-2. Set the following configuration in Docker Desktop for the SchemaCawler AI MCP Server.
-     - "schemacrawler-ai.server_connection.server" to "sqlite"
-     - "schemacrawler-ai.server_connection.database" to "sc.db"
-3. In your Visual Studio Code project, create a file called ".vscode/mcp.json", with the following server definition.
-    ```json
-    {
-      "servers": {
-        "schemacrawler_sqlite": {
-          "command": "docker",
-          "args": [
-            "--log-level",
-            "debug",
-            "mcp",
-            "gateway",
-            "run",
-            "--long-lived",
-            "--verbose"
-          ],
-          "type": "stdio"
-        }
-      }
-    }
-    ```
-4. Use Visual Studio Code Agent mode to ask questions about your database. The server should start up automatically.
-  Additional "Agent" chat modes are provided in this project too. Use the "database-expert" or "sql-query-assistant" modes for fine-tuned help for specific tasks.
-  A good question to start with is "What tables are available in my database?".
+
+## Use Visual Studio Code MCP Client
+
+1. Connect to the SchemaCrawler AI MCP Server in Visual Studio Code (the server is configured in the ".vscode/mcp.json" file)
+2. Ask questions about your database in "Agent" mode - here are some examples:
+   - "What tables are available in my database?"
+   - "Show me the columns in the Books table"
+   - "What foreign keys reference the Authors table?"
+   - "Are there any design issues with my database schema?"
+   - "Write SQL to find books and their authors"
+3. Additional agents are provided in this project too. Use the "database-expert" or "sql-query-assistant" agents for fine-tuned help for specific tasks.
 
 
 ## Configure Your Database
 
-1. Configure a connection to your database in Docker Desktop, and follow the steps above again. See [additional configuration parameters which can be set as environmental variables](https://github.com/schemacrawler/SchemaCrawler-AI/blob/main/schemacrawler-ai-mcpserver/mcp-server-registration.json).
+1. Stop the SchemaCrawler AI MCP Server
+   ```sh
+   docker compose -f schemacrawler-mcpserver.yaml down -t0
+   ```
+2. Configure a connection to your database in the "schemacrawler-mcpserver.yaml" file, and follow the steps above again. See [additional configuration parameters which can be set as environmental variables](https://github.com/schemacrawler/SchemaCrawler-AI/blob/main/schemacrawler-ai-mcpserver/mcp-server-registration.json).
 
 
-## Next Steps
+## Use Other MCP Clients
 
-Start the SchemaCawler AI MCP Server with the [HTTP transport](./server-http-transport.md).
+Try other MCP Clients:
+- [Microsoft AI Shell](https://learn.microsoft.com/en-us/powershell/utility-modules/aishell/overview?view=ps-modules) for a shell
+- ... and more at [Awesome MCP Clients](https://github.com/punkpeye/awesome-mcp-clients)
+
