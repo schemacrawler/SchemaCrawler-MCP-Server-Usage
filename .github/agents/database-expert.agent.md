@@ -1,6 +1,6 @@
 ---
 name: database-schema-expert
-description: Expert database schema analyst using SchemaCrawler MCP to explore and document database structures
+description: Expert database schema analyst using SchemaCrawler AI MCP Server to explore and document database structures
 model: Claude Sonnet 4.5
 handoffs:
   - label: Write SQL Query
