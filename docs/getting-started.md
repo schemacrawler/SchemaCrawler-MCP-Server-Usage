@@ -34,6 +34,8 @@ The SchemaCawler AI MCP Server is available as a Docker image from [Docker Hub](
    - "What foreign keys reference the Authors table?"
    - "Are there any design issues with my database schema?"
    - "Write SQL to find books and their authors"
+   - "Is there any sensitive data in the database?"
+   - "Help me visualize the relations of the Authors table in a visualization tool"
 3. Additional agents are provided in this project too. Use the "database-expert" or "sql-query-assistant" agents for fine-tuned help for specific tasks.
 
 
